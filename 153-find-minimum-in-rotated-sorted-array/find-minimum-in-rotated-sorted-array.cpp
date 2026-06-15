@@ -13,8 +13,9 @@ public:
                 ans=min(ans,nums[start]);
                 start=mid+1;
             }else{
-                end=mid-1;
+                
                 ans=min(ans,nums[mid]);
+                end=mid-1;
             }
         }
         return ans;
